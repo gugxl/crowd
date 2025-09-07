@@ -1,0 +1,2 @@
+CREATE USER crowd WITH PASSWORD 'gugu123';
+

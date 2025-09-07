@@ -1,0 +1,59 @@
+spring:
+  application:
+    name: crowd
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crowd
+    username: crowd
+    password: gugu123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  servlet:
+    context-path: /crowd
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
+  packages-to-scan: com.gugu
+  paths-to-match: /**
+  info:
+    title: Song Demo API
+    description: A RESTful API for managing songs.
+    version: 1.0.0
+    termsOfService: http://swagger.io/terms/
+    license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
+    contact:
+      name: gugu
+      email: 1104534797@qq.com
+
+
+logging:
+  level:
+    root: INFO            # 全局日志级别
+    com.gugu.crowd: DEBUG
+  file:
+    name: logs/crowd.log   # 输出到文件
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+hive:
+  datasource:
+    jdbcUrl: jdbc:hive2://localhost:10000/default
+    driver-class-name: org.apache.hive.jdbc.HiveDriver
+    username: hive
+    password:
