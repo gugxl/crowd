@@ -20,11 +20,11 @@ public class HiveRepository {
     }
 
     public Boolean createTable(String tableName) {
-        String sql = "CREATE TABLE IF NOT EXISTS %s (\n" +
+        String sql = String.format("CREATE TABLE IF NOT EXISTS %s (\n" +
                 "                    id BIGINT,\n" +
                 "                    name STRING\n" +
                 "                )\n" +
-                "                STORED AS PARQUET".formatted(tableName);
+                "                STORED AS PARQUET",tableName);
 
          hiveJdbcTemplate.execute(sql);
         return true;
