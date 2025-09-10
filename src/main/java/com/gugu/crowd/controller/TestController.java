@@ -29,4 +29,11 @@ public class TestController {
     public Boolean testHive() {
         return testService.testHive();
     }
+
+
+    @GetMapping("/testHbase")
+    @Operation(summary = "hbase尝试连接", description = "hbase尝试连接")
+    public Boolean testHbase() {
+        return testService.testHbase();
+    }
 }

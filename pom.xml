@@ -95,6 +95,23 @@
         </dependency>
         <!-- Hive end -->
 
+        <!-- hbase start -->
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-common</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-server</artifactId>
+            <version>2.5.6</version>
+        </dependency>
+        <!-- hbase end -->
 
 
     </dependencies>

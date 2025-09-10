@@ -12,4 +12,6 @@ public interface TestService extends IService<Users> {
     List<Users> testDb();
 
     Boolean testHive();
+
+    Boolean testHbase();
 }
