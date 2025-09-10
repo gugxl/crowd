@@ -27,36 +27,45 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <!-- web start -->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- web end -->
 
+        <!-- mybatis plus start -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.5.3.1</version>
         </dependency>
+        <!-- mybatis plus end -->
 
+        <!-- lombok start -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <!-- lombok end -->
+
+        <!-- test start -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- mybatis plus 集成 start  -->
+        <!-- test end -->
 
-        <!-- postgresql 数据库 连接 start -->
+        <!-- postgresql 连接 start -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!-- postgresql 数据库 连接 end -->
+        <!-- postgresql 连接 end -->
 
         <!--swagger 依赖 start -->
         <dependency>
@@ -85,6 +94,8 @@
             <version>4.0.0</version>
         </dependency>
         <!-- Hive end -->
+
+
 
     </dependencies>
 
