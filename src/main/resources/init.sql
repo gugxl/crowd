@@ -1,2 +1,3 @@
 CREATE USER crowd WITH PASSWORD 'gugu123';
 
+CREATE DATABASE crowd OWNER crowd;

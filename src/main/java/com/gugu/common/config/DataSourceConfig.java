@@ -1,4 +1,4 @@
-package com.gugu.asset.config;
+package com.gugu.common.config;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;

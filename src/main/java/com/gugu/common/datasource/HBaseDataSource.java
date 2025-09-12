@@ -1,4 +1,4 @@
-package com.gugu.asset.dao;
+package com.gugu.common.datasource;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;

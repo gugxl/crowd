@@ -1,4 +1,4 @@
-package com.gugu.asset.dao;
+package com.gugu.common.datasource;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Map;
 
 @Repository
-public class HiveRepository {
+public class HiveDataSource {
     private final JdbcTemplate hiveJdbcTemplate;
 
-    public HiveRepository(@Qualifier("hiveJdbcTemplate") JdbcTemplate hiveJdbcTemplate) {
+    public HiveDataSource(@Qualifier("hiveJdbcTemplate") JdbcTemplate hiveJdbcTemplate) {
         this.hiveJdbcTemplate = hiveJdbcTemplate;
     }
 
