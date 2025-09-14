@@ -17,6 +17,7 @@ spring:
 server:
   servlet:
     context-path: /crowd
+  port: 8888
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
@@ -54,8 +55,10 @@ logging:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 
 hive:
-  datasource:
-    jdbcUrl: jdbc:hive2://localhost:10000/default
-    driver-class-name: org.apache.hive.jdbc.HiveDriver
-    username: hive
-    password:
+  jdbc-url: jdbc:hive2://localhost:10000/default
+  username: hive
+  password:
+
+hbase:
+  zookeeper-quorum: localhost
+  client-port: 2181
